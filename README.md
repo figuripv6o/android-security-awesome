@@ -285,4 +285,4 @@ A collection of Android security-related resources.
 
 ## Contributing
 
-Your contributions are always welcome!
+Your contributions welcome 

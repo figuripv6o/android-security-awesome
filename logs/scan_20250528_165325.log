@@ -1,0 +1,6 @@
+[SECURITY AWESOME] Scan started...
+from bleak import BleakClient, BleakScanner
+        async with BleakClient(device.address) as client:
+    print("[SCAN] Searching BLE field for buzzers...")
+    devices = await BleakScanner.discover()
+        print("BUZZ EM ALL terminated. BLE quiet for now.")

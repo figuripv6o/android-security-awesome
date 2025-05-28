@@ -1,2 +1,6 @@
 /data/data/com.termux/files/usr/bin/python3: can't open file '/data/data/com.termux/files/home/buzzo/scripts/ble_watchdog.py': [Errno 2] No such file or directory
 /data/data/com.termux/files/usr/bin/python3: can't open file '/data/data/com.termux/files/home/buzzo/scripts/ble_watchdog.py': [Errno 2] No such file or directory
+  File "/data/data/com.termux/files/home/buzzo/scripts/atl_reactive_buzz.py", line 1
+    404: Not Found
+    ^^^
+SyntaxError: illegal target for annotation

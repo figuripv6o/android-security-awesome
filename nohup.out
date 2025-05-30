@@ -4,3 +4,17 @@
     404: Not Found
     ^^^
 SyntaxError: illegal target for annotation
+Expression 'InitializeInputStream( openslesHostApi, stream, androidRecordingPreset, sampleRate )' failed in '/home/builder/.termux-build/portaudio/src/pa_opensles.c', line: 791
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/buzzo/scripts/atl_reactive_buzz.py", line 29, in <module>
+    mic_listener()
+  File "/data/data/com.termux/files/home/buzzo/scripts/atl_reactive_buzz.py", line 19, in mic_listener
+    stream = pa.open(format=pyaudio.paInt16, channels=1, rate=44100, input=True, frames_per_buffer=1024)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pyaudio/__init__.py", line 639, in open
+    stream = PyAudio.Stream(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/pyaudio/__init__.py", line 441, in __init__
+    self._stream = pa.open(**arguments)
+                   ^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno -9999] Unanticipated host error
